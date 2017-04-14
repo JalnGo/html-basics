@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EXERCISE</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        // It is okay to ignore this for now until you learn JavaScript
+        $(function() {
+            $('input[type="submit"]').click(function(e) {
+                e.preventDefault();
+                var color = $("#color").val();
+                alert("Your favorite color is: " + color);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>EXERCISE</h1>
+    <h3>Select Your Favorite Color</h3>
+    <form>
+        <!-- Create a label and input for a text value, be sure the id is color -->
+        <input id="color" type="text">
+
+        <br>
+        <br>
+
+        <input value="SUBMIT" type="submit">
+    </form>
+</body>
+</html>
